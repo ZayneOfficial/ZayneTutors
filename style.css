@@ -10,6 +10,10 @@
             color:#333;
         }
 
+        a {
+            text-decoration: none;
+        }
+
         header{
             background:#004080;
             color:white;
@@ -78,6 +82,91 @@
             text-decoration:none;
         }
 
+        .booking-page {
+            background: linear-gradient(135deg, #ecf5ff, #f9fbff);
+            min-height: 100vh;
+        }
+
+        .booking-section {
+            max-width: 900px;
+            margin: 40px auto;
+            padding: 30px 20px 60px;
+        }
+
+        .booking-card {
+            background: white;
+            border-radius: 16px;
+            box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
+            padding: 30px;
+        }
+
+        .booking-card h2 {
+            text-align: center;
+            color: #004080;
+            margin-bottom: 25px;
+        }
+
+        .booking-form {
+            display: grid;
+            gap: 18px;
+        }
+
+        .form-row {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+        }
+
+        .field {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+        }
+
+        .field label {
+            font-weight: bold;
+            color: #004080;
+        }
+
+        .field input,
+        .field select,
+        .field textarea {
+            border: 1px solid #d5dce6;
+            border-radius: 10px;
+            padding: 12px 14px;
+            font-size: 1rem;
+            background: #f9fbff;
+        }
+
+        .field textarea {
+            min-height: 120px;
+            resize: vertical;
+        }
+
+        .booking-actions {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin-top: 10px;
+            flex-wrap: wrap;
+        }
+
+        .secondary-btn {
+            display: inline-block;
+            margin-top: 15px;
+            padding: 12px 25px;
+            background: #eaf3ff;
+            color: #004080;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            border: 1px solid #cfe0ff;
+        }
+
+        .secondary-btn:hover {
+            background: #dfeeff;
+        }
+
         footer{
             text-align:center;
             background:#002b57;
@@ -99,5 +188,11 @@
         .btn:hover{
             background:#ffcc00;
             color:#000
+        }
+
+        @media (max-width: 700px) {
+            .form-row {
+                grid-template-columns: 1fr;
+            }
         }
     

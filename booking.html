@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book a Session | ZayneTutors</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="booking-page">
+
+<header>
+    <h1>ZayneTutors</h1>
+    <p>Book Your Tutoring Session</p>
+</header>
+
+<nav>
+    <a href="index.html">Home</a>
+    <a href="index.html#services">Services</a>
+    <a href="booking.html">Book a Session</a>
+    <a href="index.html#contact">Contact</a>
+</nav>
+
+<section class="booking-section">
+    <div class="booking-card">
+        <h2>Book a Session</h2>
+
+        <form class="booking-form">
+            <div class="form-row">
+                <div class="field">
+                    <label for="student-name">Student Name</label>
+                    <input id="student-name" type="text" placeholder="Enter your name">
+                </div>
+
+                <div class="field">
+                    <label for="parent-email">Parent Email</label>
+                    <input id="parent-email" type="email" placeholder="Enter your email">
+                </div>
+            </div>
+
+            <div class="form-row">
+                <div class="field">
+                    <label for="subject">Subject</label>
+                    <select id="subject">
+                        <option value="math">Math</option>
+                        <option value="science">Science</option>
+                    </select>
+                </div>
+
+                <div class="field">
+                    <label for="grade">Grade</label>
+                    <input id="grade" type="text" placeholder="e.g. Grade 8">
+                </div>
+            </div>
+
+            <div class="field">
+                <label for="message">Session Details</label>
+                <textarea id="message" placeholder="Tell us what you'd like help with..."></textarea>
+            </div>
+
+            <div class="booking-actions">
+                <button type="submit" class="btn">Submit Booking</button>
+                <a href="index.html" class="secondary-btn">Back to Home</a>
+            </div>
+        </form>
+    </div>
+</section>
+
+<footer>
+    <p>&copy; 2026 ZayneTutors. All Rights Reserved.</p>
+</footer>
+
+</body>
+</html>
